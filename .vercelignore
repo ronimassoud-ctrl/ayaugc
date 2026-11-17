@@ -1,0 +1,9 @@
+# Never upload private or local-only files to Vercel (the build only needs the source).
+/brand/
+/proposal/
+/ebooks/
+.env*
+/dist/
+/docs/
+/node_modules/
+/.claude/
