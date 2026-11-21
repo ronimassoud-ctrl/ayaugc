@@ -17,7 +17,7 @@ export const systemeTarget = systemeNewTab ? { target: "_blank", rel: "noopener 
  * While false, every Systeme.io button renders normally but goes nowhere ("Link coming soon" on hover). Set to true
  * once https://go.ayaugc.com/waitlist, /ugc-guide and /template open, then deploy.
  */
-export const funnelsLive = false;
+export const funnelsLive = true;
 
 /**
  * Link to a Systeme.io page. Carries any utm_* params on the current URL through, so campaign
