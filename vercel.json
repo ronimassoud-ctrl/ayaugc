@@ -8,7 +8,8 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/ugc-guide", "destination": "/free-guide", "permanent": true },
-    { "source": "/template", "destination": "/templates", "permanent": true }
+    { "source": "/template", "destination": "/templates", "permanent": true },
+    { "source": "/waitlist", "destination": "https://go.ayaugc.com/waitlist", "permanent": false }
   ],
   "headers": [
     {

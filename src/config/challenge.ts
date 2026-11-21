@@ -13,11 +13,19 @@ export const systemeNewTab = true;
 export const systemeTarget = systemeNewTab ? { target: "_blank", rel: "noopener noreferrer" } : {};
 
 /**
+ * Whether the Systeme.io funnels on go.ayaugc.com are ready (HTTPS certificate issued and the funnels moved there).
+ * While false, every Systeme.io button renders normally but goes nowhere ("Link coming soon" on hover). Set to true
+ * once https://go.ayaugc.com/waitlist, /ugc-guide and /template open, then deploy.
+ */
+export const funnelsLive = false;
+
+/**
  * Link to a Systeme.io page. Carries any utm_* params on the current URL through, so campaign
- * tracking survives checkout. Placeholder URLs return null so callers can render a disabled link.
+ * tracking survives checkout. Placeholder URLs, and every funnel while funnelsLive is false, return null so callers
+ * can render a disabled link.
  */
 export const systemeHref = (url: string): string | null => {
-  if (isPlaceholder(url)) return null;
+  if (isPlaceholder(url) || !funnelsLive) return null;
   if (typeof window === "undefined") return url;
   const utm = [...new URLSearchParams(window.location.search)].filter(([k]) => k.startsWith("utm_"));
   if (utm.length === 0) return url;

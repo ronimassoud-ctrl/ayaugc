@@ -4,11 +4,10 @@ export type ChallengeStatus = "waitlist" | "early-bird" | "open" | "closed";
 export type Testimonial = { quote: string; name: string; city: string };
 
 /**
- * Where the Systeme.io funnels live. Today they are on the old Systeme.io site at www.ayaugc.com. Before the new
- * website takes over www.ayaugc.com, connect go.ayaugc.com to Systeme.io, move these funnels to it and change this
- * one value to "https://go.ayaugc.com" (the page paths stay the same). Otherwise /template would loop back to this site.
+ * Where the Systeme.io funnels live: their own subdomain, go.ayaugc.com (moved from the old Systeme.io site on
+ * www.ayaugc.com, which is now this website). The page paths stayed the same.
  */
-const systeme = "https://www.ayaugc.com";
+const systeme = "https://go.ayaugc.com";
 
 export const site = {
   name: "AYA UGC", // in sentences; the logo is aya.ugc

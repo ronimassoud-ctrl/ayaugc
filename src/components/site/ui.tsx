@@ -285,10 +285,10 @@ export const ProductCover = ({ eyebrow, title, tone, cta, className }: {
 
 const CoverRing = ({ label, to, tone }: { label: string; to: string; tone: "mint" | "beige" }) => {
   const href = systemeHref(to);
-  const inert = isPlaceholder(to);
+  const inert = href === null;
   return (
     <a
-      href={inert ? "#" : href}
+      href={href ?? "#"}
       {...(inert ? {} : systemeTarget)}
       aria-label={!inert && systemeNewTab ? `${label} (opens in a new tab)` : label}
       aria-disabled={inert || undefined}
