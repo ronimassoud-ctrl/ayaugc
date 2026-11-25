@@ -41,7 +41,6 @@ export const site = {
     // Two 1:1 sessions with Aya during the 15 days (one to set goals, one to map what's next), booked through a link.
     checkInBooking: "You'll get a booking link when you register.",
     language: "The lessons will be in English. You can request Arabic ebooks if you prefer.",
-    graduatePerk: "Strong graduates get priority consideration for upcoming AYA UGC brand campaigns [Aya to confirm wording]",
     checkoutUrl: "[Systeme.io checkout URL]",
     // Live Systeme.io waitlist page: a sign-up form ("Join the waitlist & save") that moves people to the next funnel step.
     waitlistUrl: `${systeme}/waitlist`,

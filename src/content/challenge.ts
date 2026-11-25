@@ -127,7 +127,6 @@ export const challengeContent = {
       "Two 1:1 sessions with me during the 15 days",
       "CapCut editing lesson (Day 6)",
       "Pricing, contract and pitching lessons (Days 9 to 13)",
-      c.graduatePerk,
     ],
     addOn: `Add the ${site.templates.name} (${site.templates.price}) at checkout.`,
     refund: "Refund policy",
