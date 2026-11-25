@@ -12,7 +12,6 @@ export const freeGuideContent = {
   },
   inside: {
     title: "What's inside",
-    note: site.guide.contentsNote,
     items: [
       "What UGC is, and how it's different from influencing",
       "What brands actually pay for",
@@ -21,7 +20,6 @@ export const freeGuideContent = {
       "How to share your first samples",
     ],
   },
-  tip: "On Instagram? Comment GUIDE on any of my posts and I'll send it to your DMs.",
   next: {
     title: "Ready for the full plan?",
     body: `${site.challenge.name} starts ${site.challenge.startDate}.`,

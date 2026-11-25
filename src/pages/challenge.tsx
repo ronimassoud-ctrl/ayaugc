@@ -134,7 +134,6 @@ const Challenge = () => {
       <Section>
         <H2>{t.how.title}</H2>
         <Steps items={t.how.steps} className="mt-10" />
-        <p className="caption mt-10">{t.how.caption}</p>
       </Section>
 
       {/* 6.6 Meet Aya */}

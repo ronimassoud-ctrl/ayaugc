@@ -8,6 +8,9 @@ export const homeContent = {
     title: "UGC that sells, and the skills to make it yourself.",
     body: `I'm Aya. I make Arabic and English UGC for brands across the UAE, and I teach creators how to do it properly. ${site.brandsCount} brands so far, and every lesson comes from real client work.`,
     quote: "Request a quote",
+    // Each hero button is labelled by audience so visitors pick their lane before clicking.
+    creatorLabel: "Creator?",
+    brandLabel: "Brand?",
     strip: { name: "15-Day UGC Creator Challenge", facts: [`Starts ${c.startDate}`] },
     wallLabel: "Photos of Aya at work and stills from her sample videos",
   },
@@ -38,12 +41,12 @@ export const homeContent = {
     title: `${c.tagline}.`,
     body: "Fifteen days, one clear system. Whether you've never been paid for a video or you've done a few deals and want better rates, you'll finish with:",
     outcomes: [
-      "A niche and the formats brands in it buy",
       "Hooks and scripts you can reuse",
       `${c.portfolioVideos} portfolio videos, filmed and edited on your phone`,
       "A price list, and the confidence to talk about usage fees",
       "A UAE prospect list and pitches ready to send",
       "A 30-day plan for what comes next",
+      "2 one-on-one sessions with me to kickstart your journey",
     ],
     phases: [
       { name: "Create", from: 1, to: 7 },
@@ -63,14 +66,20 @@ export const homeContent = {
       { title: "Strategy and scripting", body: "Angles and hooks matched to your product, written to sound like a real person." },
       { title: "Creator selection", body: "Need more faces? I find, brief and manage the right creators." },
     ],
-    steps: [{ title: "Brief" }, { title: "Concepts and scripts" }, { title: "Filming and editing" }, { title: "Delivery and revisions" }],
+    // Day breakdown of a typical project (turnaround 3 to 6 days).
+    steps: [
+      { label: "Day 1", title: "Brief" },
+      { label: "Day 2 to 3", title: "Scripts" },
+      { label: "Day 3 to 5", title: "Filming and editing" },
+      { label: "Day 6", title: "Delivery" },
+    ],
     cta: "See brand services",
   },
 
   about: {
     eyebrow: "Meet Aya",
     title: "Like a capable older sister who has done it.",
-    body: `${site.story.home} I still film for brands every week, so what I teach is what's working right now, not what worked three years ago.`,
+    body: site.story.short,
     link: "Read my story",
     portrait: "Portrait of Aya",
   },

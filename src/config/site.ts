@@ -18,9 +18,9 @@ export const site = {
   instagram: { handle: "@aya.ugc", url: "https://www.instagram.com/aya.ugc" },
   // Aya's Amazon wishlist, linked as "Shop equipment must-haves" on the old Systeme.io home page.
   equipmentUrl: "https://www.amazon.ae/hz/wishlist/ls/39UW0OLXZ1250",
-  brandsCount: "100+", // must match Instagram
+  brandsCount: "250+", // must match Instagram (confirmed 25 Nov 2026)
   sinceYear: "[year]",
-  replyTime: "[2 working days]",
+  replyTime: "2 working days",
   // Aya's portrait (4:5, window light), a path under public/ such as "photos/aya-portrait.jpg". Shows a grey placeholder card until then.
   portraitPhoto: "media/photos/aya-portrait.jpg",
 
@@ -38,9 +38,10 @@ export const site = {
     startDate: "7 December 2026",
     closeDate: "[doors-close date]",
     minutesPerDay: "[20 to 30]",
-    portfolioVideos: "[number]",
-    checkInBooking: "[How the check-in is booked, e.g. you'll get a booking link in your welcome email.]",
-    language: "[Language of the ebooks and community.]",
+    portfolioVideos: "At least 3",
+    // Two 1:1 sessions with Aya during the 15 days (one to set goals, one to map what's next), booked through a link.
+    checkInBooking: "You'll get a booking link when you register.",
+    language: "The lessons will be in English. You can request Arabic ebooks if you prefer.",
     graduatePerk: "Strong graduates get priority consideration for upcoming AYA UGC brand campaigns [Aya to confirm wording]",
     checkoutUrl: "[Systeme.io checkout URL]",
     // Live Systeme.io waitlist page: a sign-up form ("Join the waitlist & save") that moves people to the next funnel step.
@@ -48,11 +49,12 @@ export const site = {
   },
   studio: {
     categories: "[Beauty, skincare, food, home, fashion, tech]",
-    turnaround: "[x working days]",
+    turnaround: "3 to 6 days",
     revisions: "[one]",
-    languages: "English, Arabic (Gulf and Levantine) [Aya to confirm dialects]",
-    // [Aya to set bands]
-    budgetBands: ["Under AED [x]", "AED [x] to [y]", "AED [y] to [z]", "Above AED [z]", "Not sure yet"],
+    languages: "English and Levantine (Lebanese) Arabic",
+    budgetBands: ["Under AED 500", "AED 500 to 1,000", "AED 1,000 to 2,000", "Above AED 2,000"],
+    // Real, consented brand reviews (quote, name, role and brand). The reviews section on /brands stays hidden while this is empty.
+    reviews: [] as { quote: string; name: string; role: string }[],
     samplePlaceholder: "[Category · format]",
   },
   templates: {
@@ -61,9 +63,9 @@ export const site = {
     // Live Systeme.io order page: "Templates", AED 79, one-off payment.
     checkoutUrl: `${systeme}/template`,
     formats: "[File formats, e.g. Canva links and editable PDF.]",
-    editAnswer: "[Answer.]",
+    editAnswer: "Yes, they're editable. Make them your own.",
   },
-  guide: { name: "The beginner's guide to UGC", optInUrl: `${systeme}/ugc-guide`, contentsNote: "[Aya to confirm contents]" },
+  guide: { name: "The beginner's guide to UGC", optInUrl: `${systeme}/ugc-guide` },
 
   // Draft legal text: Aya reviews it before launch.
   legal: {
@@ -75,11 +77,11 @@ export const site = {
 
   // Copy Aya writes in her own words.
   story: {
-    home: "[Two or three sentences from Aya in her own words: how she started, what she does now.]",
-    challenge: "[One or two sentences from Aya on how she started.]",
+    // Shown as "Meet Aya" on Home and "I teach what I do every week" on the challenge page.
+    short: "I left my full-time job two years ago to do this for real, and it's been the best decision I've made. I've since worked with over 250 brands. I'm not teaching from a course I took once; I'm still in it every week, filming, editing, pitching. So everything here is just what's actually working for me right now.",
     about: [
-      "[Paragraph 1, in Aya's words: how she started in UGC.]",
-      "[Paragraph 2: what she learned the hard way, and the moment she started charging properly.]",
+      "I started making UGC content without really planning to. I filmed a simple video for a product I was already using, just to see what would happen. It did better than anything I'd ever posted for myself. That was enough to make me take it seriously, and two years ago I left my full-time job to do this properly.",
+      "For a while I took whatever rate a brand offered, because I didn't know what else to ask for. Once I actually worked out the time behind one video (the concept, the filming, the editing, the back-and-forth), I realized I was being paid for a fraction of the work. That's when I built my own pricing, usage terms and contracts, instead of using whatever the brand sent over.",
       "[Paragraph 3: what a working week looks like now.]",
     ],
   },

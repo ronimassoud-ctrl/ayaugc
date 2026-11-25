@@ -214,12 +214,14 @@ export const CheckList = ({ items, icon = "check", onPine = false, className }: 
 );
 
 /** Numbered steps with serif Pine numbers (01, 02...). */
-export const Steps = ({ items, className }: { items: { title: string; body?: React.ReactNode }[]; className?: string }) => (
+/** Numbered steps; an optional `label` (e.g. "Day 2 to 3") sits as an eyebrow between the number and the title. */
+export const Steps = ({ items, className }: { items: { title: string; label?: string; body?: React.ReactNode }[]; className?: string }) => (
   <ol className={cn("stagger grid gap-8 md:grid-cols-2 lg:grid-cols-4", className)}>
     {items.map((s, i) => (
       <li key={s.title}>
         <span className="num block text-[44px] leading-none">{String(i + 1).padStart(2, "0")}</span>
-        <h3 className="h4 mt-4">{s.title}</h3>
+        {s.label && <p className="eyebrow mt-4">{s.label}</p>}
+        <h3 className={cn("h4", s.label ? "mt-1" : "mt-4")}>{s.title}</h3>
         {s.body && <p className="supporting mt-2">{s.body}</p>}
       </li>
     ))}

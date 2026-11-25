@@ -146,6 +146,21 @@ const Brands = () => (
       </Wrap>
     </section>
 
+    {/* 7.5b Brand reviews: real, consented quotes only (site.studio.reviews); hidden while there are none. */}
+    {site.studio.reviews.length > 0 && (
+      <Section>
+        <H2>{t.reviews.title}</H2>
+        <div className="stagger mt-10 grid gap-6 md:grid-cols-2">
+          {site.studio.reviews.map((r) => (
+            <Card key={r.quote} as="figure">
+              <blockquote>{r.quote}</blockquote>
+              <figcaption className="caption mt-4">{r.name}, {r.role}</figcaption>
+            </Card>
+          ))}
+        </div>
+      </Section>
+    )}
+
     {/* 7.6 Quote form */}
     <Section id="quote">
       <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr]">

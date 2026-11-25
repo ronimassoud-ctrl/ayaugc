@@ -35,6 +35,12 @@ export const samples: Sample[] = [
 export type Photo = { src: string; alt: string };
 const photo = (name: string, alt: string): Photo => ({ src: `${base}photos/${name}.jpg`, alt });
 
+/** 4:5 portraits (720x900) for the "Meet Aya" section on Home and the About hero. */
+export const portraits = {
+  home: photo("aya-portrait-home", "Aya on a rattan chair, scrolling her phone"),
+  about: photo("aya-portrait-about", "Aya working on her laptop in a cafe with an iced matcha"),
+};
+
 /** 9:16 photos of Aya at work (360x640 tiles). */
 export const photos = {
   phone: photo("photo-phone", "Aya holding up her phone with a portrait on screen"),

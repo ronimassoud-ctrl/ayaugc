@@ -7,7 +7,7 @@ const legal = (title: string, path: string) => ({ title: `${title} · AYA UGC`, 
 
 export const meta = {
   "/": { title: "AYA UGC · UGC creator in Dubai, English and Arabic", description: "Arabic and English UGC for UAE brands, and the 15-Day UGC Creator Challenge for creators who want to learn the craft.", path: "/" },
-  "/challenge": { title: "The 15-Day UGC Creator Challenge · AYA UGC", description: `From first deal to fully booked. One lesson a day by email, a WhatsApp community and a 1:1 check-in. Starts ${site.challenge.startDate}.`, path: "/challenge" },
+  "/challenge": { title: "The 15-Day UGC Creator Challenge · AYA UGC", description: `From first deal to fully booked. A lesson a day on the platform, a WhatsApp community and two 1:1 sessions. Starts ${site.challenge.startDate}.`, path: "/challenge" },
   "/brands": { title: "UGC for brands in the UAE · AYA UGC Studio", description: "UGC videos for ads and organic, in English and Arabic. Strategy, scripting and creator selection from a Dubai creator.", path: "/brands" },
   "/free-guide": { title: "The beginner's guide to UGC, free · AYA UGC", description: "What UGC is, what brands pay for and how to film your first sample. Free by email.", path: "/free-guide" },
   "/templates": { title: "UGC starter templates · AED 79 · AYA UGC", description: "The contract, portfolio, rate card and pitch I use with real clients. Instant download.", path: "/templates" },

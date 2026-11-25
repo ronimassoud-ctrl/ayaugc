@@ -5,6 +5,7 @@ import { RotatingText } from "@/components/site/rotating-text";
 import LaneCards from "@/components/site/lane-cards";
 import { Btn, Eyebrow, H1, H2, Rise, Section, Takeaway, Wrap } from "@/components/site/ui";
 import { site } from "@/config/site";
+import { portraits } from "@/config/media";
 import { meta } from "@/config/seo";
 import { aboutContent as t } from "@/content/about";
 
@@ -20,7 +21,7 @@ const About = () => (
             <H1>{t.hero.title}</H1>
             <p className="mt-6 max-w-text">{t.hero.body}</p>
           </div>
-          <AyaPortrait label={t.hero.portrait} className="mx-auto md:mx-0 md:justify-self-end" />
+          <AyaPortrait label={portraits.about.alt} src={portraits.about.src} className="mx-auto md:mx-0 md:justify-self-end" />
         </Rise>
       </Wrap>
     </section>

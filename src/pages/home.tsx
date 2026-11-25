@@ -8,7 +8,7 @@ import { Btn, Card, CheckList, Eyebrow, H1, H2, Rise, Section, Steps, Wrap } fro
 import { site } from "@/config/site";
 import { meta } from "@/config/seo";
 import { challengeCta } from "@/config/challenge";
-import { photos, samples } from "@/config/media";
+import { photos, portraits, samples } from "@/config/media";
 import { homeContent as t } from "@/content/home";
 
 // Hero wall: Aya's photos alternating with stills from her sample videos, so every column mixes both.
@@ -29,9 +29,16 @@ const Home = () => {
             <div className="lg:col-span-7">
               <H1 display className="max-w-[14ch]">{t.hero.title}</H1>
               <p className="mt-6 max-w-text">{t.hero.body}</p>
-              <div className="mt-8 flex flex-col gap-4 md:flex-row">
-                <Btn to={cta.url} systeme>{cta.label}</Btn>
-                <Btn to="/brands#quote" variant="secondary">{t.hero.quote}</Btn>
+              {/* Each button carries an audience label above it, so creators and brands pick their lane before clicking. */}
+              <div className="mt-8 flex flex-col gap-6 md:flex-row md:items-end">
+                <div>
+                  <p className="supporting mb-2 font-medium">{t.hero.creatorLabel}</p>
+                  <Btn to={cta.url} systeme>{cta.label}</Btn>
+                </div>
+                <div>
+                  <p className="supporting mb-2 font-medium">{t.hero.brandLabel}</p>
+                  <Btn to="/brands#quote" variant="secondary">{t.hero.quote}</Btn>
+                </div>
               </div>
               <p className="caption mt-4">
                 <strong className="font-semibold text-ink">{t.hero.strip.name}</strong>
@@ -139,7 +146,7 @@ const Home = () => {
       {/* 5.6 About Aya */}
       <Section>
         <div className="grid items-center gap-12 md:grid-cols-[1fr_1.4fr]">
-          <AyaPortrait label={t.about.portrait} />
+          <AyaPortrait label={portraits.home.alt} src={portraits.home.src} />
           <div>
             <Eyebrow>{t.about.eyebrow}</Eyebrow>
             <H2>{t.about.title}</H2>

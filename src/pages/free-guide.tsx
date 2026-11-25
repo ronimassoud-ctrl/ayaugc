@@ -1,6 +1,6 @@
 import Layout from "@/components/site/layout";
 import SEO from "@/components/seo";
-import { Btn, Card, CheckList, Eyebrow, H1, H2, ProductCover, Rise, Section, Tip, Wrap } from "@/components/site/ui";
+import { Btn, Card, CheckList, Eyebrow, H1, H2, ProductCover, Rise, Section, Wrap } from "@/components/site/ui";
 import { site } from "@/config/site";
 import { meta } from "@/config/seo";
 import { freeGuideContent as t } from "@/content/free-guide";
@@ -25,9 +25,8 @@ const FreeGuide = () => (
     </section>
 
     <Section>
-      <H2>{t.inside.title} <span className="font-sans text-base not-italic text-brown">{t.inside.note}</span></H2>
+      <H2>{t.inside.title}</H2>
       <CheckList items={t.inside.items} className="mt-8 max-w-text" />
-      <Tip className="mt-12">{t.tip}</Tip>
     </Section>
 
     <Section>

@@ -12,7 +12,7 @@ export const challengeContent = {
     lockupNumber: "15",
     lockupLabel: ["Day UGC", "Creator", "Challenge"],
     title: "From first deal to fully booked.",
-    body: "Fifteen days, one lesson a day by email, a WhatsApp community and a 1:1 check-in with me. For new creators who want a clear plan, and for creators with a few deals who want better rates.",
+    body: "Fifteen days, one lesson unlocked daily on the platform, a small challenge to apply it, a WhatsApp community, and two 1:1 sessions with me: one to set your goals, one to map what's next.",
     meta: [`Starts ${c.startDate}`, `${c.minutesPerDay} min a day`],
     refund: "Refund policy",
     note: skillsNote,
@@ -42,7 +42,7 @@ export const challengeContent = {
 
   days: {
     title: "The 15 days",
-    intro: "Three phases. One lesson a day. Each one is an ebook you keep.",
+    intro: "Three phases. One lesson unlocks each day.",
     phases: [
       {
         name: "Create · craft the content",
@@ -83,16 +83,15 @@ export const challengeContent = {
     steps: [
       { title: "Register", body: "Join through a secure checkout. You'll get a confirmation email straight away." },
       { title: "Join the community", body: "I add you to the challenge WhatsApp community before Day 1." },
-      { title: "One ebook a day", body: "Each morning for 15 days, the day's ebook lands in your inbox. Download it and keep it." },
-      { title: "Your 1:1 check-in", body: "Once during the 15 days, I check in with you personally to look at your progress and plan your next step." },
+      { title: "One lesson a day", body: "Each day, a new lesson unlocks on the platform, with a small challenge to apply it." },
+      { title: "Two 1:1 sessions", body: "Twice during the challenge, I meet you one to one: once to set your goals, once to map what's next." },
     ],
-    caption: `About ${c.minutesPerDay} minutes a day. Miss a day and catch up later; the ebooks are yours.`,
   },
 
   meet: {
     eyebrow: "Who's teaching",
     title: "I teach what I do every week.",
-    body: `I'm Aya, a bilingual UGC creator in Dubai. I've made content for ${site.brandsCount} brands, in English and Arabic. ${site.story.challenge} This challenge is the plan I wish I'd had.`,
+    body: site.story.short,
     link: "Read my story",
   },
 
@@ -124,9 +123,9 @@ export const challengeContent = {
     amount: c.startDate,
     terms: "Fixed-date cohort. The waitlist hears first when doors open.",
     includes: [
-      "15 daily ebooks by email, yours to keep",
+      "Daily lessons unlocked on the platform",
       "The challenge WhatsApp community",
-      "A 1:1 check-in call with me during the 15 days",
+      "Two 1:1 sessions with me during the 15 days",
       "CapCut editing lesson (Day 6)",
       "Pricing, contract and pitching lessons (Days 9 to 13)",
       c.graduatePerk,
@@ -143,8 +142,8 @@ export const challengeContent = {
       { q: "I've already done a few deals. Is this too basic?", a: "Days 1 to 7 tighten your craft; Days 8 to 15 are about pricing, usage fees, contracts, UAE permits, pitching and negotiation. Most established creators get the most from the second half." },
       { q: "I'm shy on camera.", a: "Day 5 covers faceless formats: hands, product and B-roll. Plenty of paid UGC never shows a face." },
       { q: "What do I need?", a: `A recent smartphone, the free CapCut app and about ${c.minutesPerDay} minutes a day.`, link: { label: "My equipment list is here", to: site.equipmentUrl } },
-      { q: "How does it work day to day?", a: "One ebook arrives by email each day for 15 days. You read it, do the task, and share questions in the WhatsApp community." },
-      { q: "When is my 1:1 check-in?", a: c.checkInBooking },
+      { q: "How does it work day to day?", a: "A new lesson is unlocked daily." },
+      { q: "When are my 1:1 sessions?", a: c.checkInBooking },
       { q: "What if I miss a day?", a: "Catch up whenever you like. The ebooks are yours to keep." },
       { q: "Is it in English or Arabic?", a: c.language },
       { q: "Will I make money?", a: `That depends on the work you put in and on the market. ${skillsNote}` },

@@ -51,6 +51,9 @@ export const brandsContent = {
     { title: "Pricing", body: "Quoted per project, with usage, revisions and payment terms stated on every quote." },
   ],
 
+  // Shown only when site.studio.reviews has real, consented quotes.
+  reviews: { title: "What brands say" },
+
   quote: {
     title: "Request a quote",
     body: `Tell me about the product and what you need. I reply within ${site.replyTime} with ideas and a quote.`,
