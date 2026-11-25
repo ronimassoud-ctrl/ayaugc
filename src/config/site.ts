@@ -37,7 +37,6 @@ export const site = {
     earlyBirdEnds: "[early-bird end date]",
     startDate: "7 December 2026",
     closeDate: "[doors-close date]",
-    minutesPerDay: "[20 to 30]",
     portfolioVideos: "At least 3",
     // Two 1:1 sessions with Aya during the 15 days (one to set goals, one to map what's next), booked through a link.
     checkInBooking: "You'll get a booking link when you register.",
