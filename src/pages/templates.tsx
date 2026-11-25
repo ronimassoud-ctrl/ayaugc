@@ -38,7 +38,6 @@ const Templates = () => (
           </Card>
         ))}
       </ul>
-      <p className="caption mt-8">{t.bundle.formats}</p>
     </Section>
 
     <Section>

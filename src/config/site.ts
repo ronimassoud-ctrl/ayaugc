@@ -60,7 +60,6 @@ export const site = {
     price: "AED 79",
     // Live Systeme.io order page: "Templates", AED 79, one-off payment.
     checkoutUrl: `${systeme}/template`,
-    formats: "[File formats, e.g. Canva links and editable PDF.]",
     editAnswer: "Yes, they're editable. Make them your own.",
   },
   guide: { name: "The beginner's guide to UGC", optInUrl: `${systeme}/ugc-guide` },

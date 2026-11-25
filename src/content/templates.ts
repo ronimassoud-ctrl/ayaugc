@@ -21,7 +21,6 @@ export const templatesContent = {
       { title: "Rate card", body: "Clear prices, with usage fees separated, so brands know what they're paying for." },
       { title: "Pitch", body: "A ready-to-edit message for reaching out to brands. (Bonus)" },
     ],
-    formats: tp.formats,
   },
   faq: [
     { q: "Can I edit them?", a: tp.editAnswer },
